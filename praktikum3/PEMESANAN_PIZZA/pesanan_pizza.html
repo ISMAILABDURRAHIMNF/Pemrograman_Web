@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Pizza</title>
+</head>
+<body style="width: 450px;margin: auto; margin-top: 50px;">
+    <div style=" height: 800px; border: 1px solid black; padding: 20px; box-shadow: 5px 5px 5px rgba(44, 44, 44, 0.234);">
+        <h3>Black Goose Bistro | Pizza-on-Demand</h3>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="3">Your Information</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" id="alamat" cols="21" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Telephone Number</td>
+                    <td>:</td>
+                    <td><input type="text" name="telephone" id="telephone"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Delivery Instruction</td>
+                    <td>:</td>
+                    <td><textarea name="Instruction" id="intruction" cols="21" rows="4" placeholder="No more than 400 characters long" maxlength="400"></textarea></td>
+                </tr>
+            </table>
+            <p><b>Desain Your Dream Pizza:</b><br>Pizza specs</p>
+            <p>Crust (Choose one): <br>
+                <input type="radio" name="crust" id="classic" value="classic">
+                    <label for="classic">Classic white</label><br>
+                <input type="radio" name="crust" id="multigrain" value="multigrain">
+                    <label for="multigrain">Multigrain</label><br>
+                <input type="radio" name="crust" id="cheese" value="cheese">
+                    <label for="cheese">Cheese-stufed crust</label><br>
+                <input type="radio" name="crust" id="gluten" value="gluten">
+                    <label for="gluten">Gluten-free</label><br>
+            </p>
+
+            <p>Toppings (Choose as many as you want):<br>
+                <input type="checkbox" name="topping" id="red" checked>
+                    <label for="red">Red sauce</label><br>
+                <input type="checkbox" name="topping" id="white">
+                    <label for="white">White sauce</label><br>
+                <input type="checkbox" name="topping" id="mozzarella">
+                    <label for="mozzarella">Mozzarella Cheese</label><br>
+                <input type="checkbox" name="topping" id="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" name="topping" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label><br>
+                <input type="checkbox" name="topping" id="peppers">
+                    <label for="peppers">Peppers</label><br>
+                <input type="checkbox" name="topping" id="anchoives">
+                    <label for="anchoives">Anchoives</label><br>
+            </p>
+
+            <p>Number <br>
+                How many pizzas: 
+                <input type="number" name="quantity" id="number" min="1" max="6">
+            </p>
+
+            <input type="button" value="Bring me a pizza!">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
