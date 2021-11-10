@@ -1,0 +1,101 @@
+body {
+    margin: auto; 
+    padding: 0; 
+    height: 800px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main {
+    width: 55%; margin: auto;
+}
+
+#main header {
+    display: flex;
+}
+
+#main .photo {
+    width: 30%; 
+    text-align: center; 
+    padding-top: 25px;
+}
+
+#main .photo img{
+    width: 180px;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#main .bio {
+    width: 50%;
+}
+
+#main .bio u{
+    color: blue;
+}
+
+#main .menu {
+    width: 20%;
+    text-align: right; 
+    padding-top: 15px;
+}
+
+#main article {
+    padding: 25px;
+}
+
+#main footer {
+    width: 100%; 
+    display: flex; 
+    bottom: 0; 
+    justify-content: space-between; 
+    margin-top: 100px;
+}
+
+#main footer iframe {
+    width: 30%;
+}
+
+#main footer .gallery {
+    width: 30%; 
+    border: 1px solid black;
+}
+
+#main .gallery table {
+    width: 100%; 
+    height: 100%;
+}
+
+#main .gallery section {
+    width: 90%; 
+    height: 80%; 
+    background-color: #aaaaaa; 
+    margin: auto;
+    transition: 0.4s ease-in-out;
+}
+
+#main footer fieldset {
+    width: 30%;
+}
+
+#main footer ul {
+    list-style: none;
+    margin-left: -30px;
+}
+
+#main footer li img {
+    width: 20px; 
+    padding-right: 15px;
+}
+
+/* HOVER */
+
+#main .photo:hover img {
+    transform: scale(1.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#main .gallery section:hover {
+    transform: scale(2.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: salmon;
+}
