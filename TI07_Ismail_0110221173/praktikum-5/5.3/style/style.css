@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    position: static;
+}
+
+.layer{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.layer.one .one {
+    width: 18%;
+    background-color: #f4eb49;
+}
+
+.layer.one .two {
+    width: 80%;
+    background-color: #ff6624;
+}
+
+.layer.one .box {
+    height: 80px;
+}
+
+.layer.two .one {
+    width: 18%;
+    background-color: #aedd94;
+}
+
+.layer.two .two {
+    width: 60%;
+    background-color: #d1d6db;
+}
+
+.layer.two .three {
+    width: 18%;
+    background-color: #4dd7fa;
+}
+
+.layer.two .box {
+    height: 450px;
+}
+
+.layer.three .one {
+    width: 100%;
+    height: 75px;
+    background-color: #1464f6;
+}
+
+.box {
+    border: 2px solid black;
+}
