@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 3</title>
+
+    <style>
+        .container {
+            width: 50%;
+            height: 600px;
+            margin: auto;
+            background-color: rgb(255, 122, 244);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .layer1 {
+            background-color: rgb(255, 103, 134);
+            height: 100px;
+        }
+
+        .layer3 {
+            background-color: rgb(129, 255, 200);
+            height: 100px;
+        }
+
+        .layer1, .layer2, .layer3, section{
+            margin: auto;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .layer2 {
+            display: flex;
+            height: 340px;
+            justify-content: space-between;
+        }
+
+        .side1 {
+            background-color: rgb(255, 215, 115);
+            width: 22%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .side2 {
+            width: 75%;
+            background-color: rgb(255, 115, 115);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .side1, .side2 {
+            height: 340px;
+        }
+
+        .side2 .section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .side2 section {
+            background-color: rgb(184, 255, 114);
+            height: 120px;
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="layer1"><h2>Header</h2></div>
+        <div class="layer2">
+            <div class="side1"><h2>Aside</h2></div>
+            <div class="side2">
+                <div class="article"><h2>Article</h2></div>
+                <div class="section">
+                    <section><h2>Image</h2></section>
+                    <section><h2>Image</h2></section>
+                    <section><h2>Image</h2></section>
+                </div>
+            </div>
+        </div>
+        <div class="layer3"><h2>Footer</h2></div>
+    </div>
+</body>
+</html>

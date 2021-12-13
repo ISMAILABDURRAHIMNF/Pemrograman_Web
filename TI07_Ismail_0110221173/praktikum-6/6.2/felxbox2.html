@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+
+    <style>
+        p{
+            font-size: 30px;
+            padding-left: 50px;
+        }
+
+        .container {
+            margin: auto;
+            width: 70%;
+            display: flex;
+            background-color: rgb(255, 207, 207);
+            height: 500px;
+        }
+
+        .navigation {
+            flex-grow: 1;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 5;
+        }
+
+        .header, .footer {
+            flex-grow: 1;
+            background-color: rgb(255, 238, 144);
+        }
+
+        .content {
+            flex-grow: 4;
+            display: flex;
+        }
+
+        .article {
+            flex-grow: 5;
+            background-color: white;
+        }
+
+        .aside {
+            flex-grow: 2;
+            background: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <p>Nav</p>
+        </div>
+        <div class="main">
+            <div class="header"><p>Header</p></div>
+            <div class="content">
+                <section class="article"><p>Article</p></section>
+                <section class="aside"><p>Aside</p></section>
+            </div>
+            <div class="footer"><p>Footer</p></div>
+        </div>
+    </div>
+</body>
+</html>
