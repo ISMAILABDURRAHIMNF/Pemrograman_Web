@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <script>
+        function fungsiChat(){
+            let text = document.getElementById("areaKetik").value;
+            let chat = document.createElement("section");
+            chat.innerHTML = text;
+            document.getElementById("chatBox").appendChild(chat);
+        }
+    </script>
+</head>
+<body style="height: 800px;">
+    <div id="chatApp" style="width: 300px; position: fixed; bottom: 0; right: 0; border: 1px solid black; padding: 2px;">
+        <section style="height: 200px; width: 100%;">
+            <section id="chatBox" style="display: flex; flex-direction: column; flex-wrap: nowrap;"></section>
+        </section>
+        <section>
+            <input type="text" id="areaKetik" style="width: 80%;">
+            <button id="kirim" onclick="fungsiChat()">Kirim</button>
+        </section>
+    </div>
+</body>
+</html>

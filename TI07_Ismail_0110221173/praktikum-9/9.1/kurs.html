@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+    <script>
+        function fungsiKurs(){
+            let pilihan = (document.getElementById("pilihanKurs").value);
+            let bil1 = Number(document.getElementById("nilaiAwal").value);
+            let bil2 = Number(document.getElementById("nilaiAkhir").value);
+            let kurs
+            if (pilihan == "usd" ) {
+                kurs = bil1*9915
+            } else if (pilihan == "sgd"){
+                kurs = bil*13472
+            } else if ( pilihan == "myr"){
+                kurs = bil1*874
+            } else if (pilihan == "jpy"){
+                kurs = bil1*120
+            } else if (pilihan == "eur"){
+                kurs = bil1*15888
+            } else {
+                kurs = bil1*3592
+            }
+            document.getElementById("nilaiAkhir").value=kurs;
+        }
+    </script>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form" style="width: fit-content; margin: auto;">
+        <fieldset>
+            <legend>Kurs Rupiah Mata Uang Asing</legend>
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th>Masukan Nilai</th>
+                    <th>Valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="nilaiAwal" value="" onchange="fungsiKurs()">
+                    </td>
+                    <td>
+                        <select id="pilihanKurs">
+                            <option value="usd">Dollar US</option>
+                            <option value="sgd">Dollar Singapore</option>
+                            <option value="myr">Ringgit Malaysia</option>
+                            <option value="jpy">Yen Jepang</option>
+                            <option value="eur">Euro</option>
+                            <option value="sar">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><input type="text" id="nilaiAkhir" value="" onchange="fungsiKurs()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
